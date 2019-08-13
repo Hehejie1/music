@@ -1,0 +1,131 @@
+html,body,div,p,span,h1,h2,h3,h4,h5,h6,input,img,a,select,textarea,ul,li,ol,dl,dt,dd{margin: 0;padding: 0;}
+*, ::after, ::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+*, ::after, ::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+a{text-decoration: none;}
+ul,li,ol,dl,dt,dd{list-style: none}
+.clearfix:after{content: '';display: block;clear: both;}
+audio::-webkit-media-controls {
+    　　overflow: hidden !important
+}
+audio::-webkit-media-controls-enclosure {
+    　　width: calc(100% + 32px);
+    　　margin-left: auto;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: "PT Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #373a3c;
+    background-image: url("/img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hh-index{
+    position: relative;
+    width: 100%;
+}
+/*顶部*/
+.hh-header{
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 818;
+    color: #bfbfbf;
+}
+.hh-header img{
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 919;
+}
+.hh-header p{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+/*内容*/
+.hh-container{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+    max-height: 29rem;
+    overflow: hidden;
+}
+.hh-container-songs{
+    width: 100%;
+    height: 100%;
+}
+.hh-container-songs ul{
+    width: 100%;
+    height: 29rem;
+    overflow: scroll;
+}
+.hh-container-songs li{
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 0.2rem 0;
+}
+.hh-container-sigle{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.hh-container-sigle p{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 1rem 0 2rem;
+}
+.hh-container-sigle img{
+    width: 80%;
+    height: 22rem;
+}
+
+
+/*底部*/
+.hh-footer{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 1rem;
+    z-index: 818;
+    color: #000;
+    text-align: center;
+}
+#audio{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+

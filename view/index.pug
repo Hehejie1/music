@@ -1,0 +1,26 @@
+block head
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+block css
+    link(rel="stylesheet", href="/css/index.css")
+
+block contents
+    .hh-index
+        .hh-header
+            img.backHead(src="/img/index.jpg")
+            p 露露音乐屋
+        .hh-container
+            .hh-container-songs
+                ul
+                    each info in songs
+                        li=info
+            .hh-container-sigle
+                p
+                img
+        .hh-footer.clearfix
+            audio#audio(controls="controls",controlsList="nodownload")
+
+
+block scripts
+    script(src="/js/jquery.min.js")
+    script(src="/js/index.js")
